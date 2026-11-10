@@ -1,3 +1,14 @@
+<div align="center">
+
+<a href="https://chronolox.com">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/chronolox-logo-dark.png">
+    <img src="assets/chronolox-logo-light.png" alt="Chronolox — hourglass emblem and wordmark" width="360">
+  </picture>
+</a>
+
+</div>
+
 # Chronolox Security Architecture & Source-Code Escrow Specification
 
 **Document Version:** 1.0  
