@@ -1,0 +1,10 @@
+# AI agent working files (agent memories, tool configs) live only in the main
+# workspace repository — never track them in this public repository.
+.serena/
+.opencode/
+.codex/
+.claude/
+.agents/
+.aiignore
+AGENTS.md
+CLAUDE.md
