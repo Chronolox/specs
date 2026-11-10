@@ -58,17 +58,18 @@ flowchart TD
 
     Archive -. Requires Password .-> Contract
 
-    Contract -->|Company Active: Extends Unlock Date| ActiveState["Normal Operations<br/>• Secret postponed forward<br/>• Source remains sealed"]
-    Contract -->|Company Inactive: Timer Expires| AbandonedState["Autonomous Trigger<br/>• Timer expires naturally<br/>• Password released on-chain"]
+    Contract -->|Company Active: Extends Unlock Date| ActiveState["Normal Operations<br/>- Secret postponed forward<br/>- Source remains sealed"]
+    Contract -->|Company Inactive: Timer Expires| AbandonedState["Autonomous Trigger<br/>- Timer expires naturally<br/>- Password released on-chain"]
 
-    AbandonedState --> Extract["Community Recovery Command:<br/><code>chronolox-cli extract-source --secret-id 0x...</code>"]
-    Extract --> Audit["Full Open Source Codebase Extracted<br/>• Independent compilation<br/>• Community-run relayers<br/>• Complete protocol survival"]
+    AbandonedState --> Extract["Community Recovery Command:<br/>chronolox-cli extract-source --secret-id 0x..."]
+    Extract --> Audit["Full Open Source Codebase Extracted<br/>- Independent compilation<br/>- Community-run relayers<br/>- Complete protocol survival"]
 
     style Binary fill:#f8f9fa,stroke:#495057,stroke-width:1px
     style Blockchain fill:#e8f4fd,stroke:#0c63e4,stroke-width:1px
     style ActiveState fill:#e6fcf5,stroke:#0ca678,stroke-width:1px
     style AbandonedState fill:#fff4e6,stroke:#f76707,stroke-width:1px
     style Audit fill:#edf2ff,stroke:#4263eb,stroke-width:1px
+```
 
 ### 4.1 How It Works
 1. **Encrypted Source Bundling:** Every official compiled binary (`chronolox-heir`, `chronolox-cli`) contains an embedded, encrypted archive (`source_archive.7z`) containing the complete Go source code, build scripts, and contract definitions.
