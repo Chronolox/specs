@@ -80,7 +80,7 @@ flowchart TD
    ```bash
    chronolox-cli extract-source --secret-id <PUBLIC_ESCROW_SECRET_ID>
 
-```
+
 
 The binary queries the blockchain, retrieves the unlocked password, unpacks the entire codebase, and allows the community to audit, self-host, and compile independent relayers and clients indefinitely.
 
