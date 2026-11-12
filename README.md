@@ -101,7 +101,7 @@ flowchart TD
 Heirs do not need network connectivity to inspect or prepare their recovery environments:
 
 * **Portable Standalone Executables:** The Heir Unlocker requires zero external package installations, zero browser dependencies, and zero administrative daemon privileges.
-* **Checksum Verification:** Every release published to `github.com/Chronolox/releases` is paired with cryptographic checksums (`SHA256SUMS`) signed by the official Chronolox Release Key.
+* **Checksum Verification:** Every official application release on GitHub is paired with cryptographic checksums (`SHA256SUMS`) signed by the official Chronolox Release Key.
 * **Independent On-Chain Verification:** Even if `chronolox.com` is offline, heirs can verify capsule timestamps directly against the Polygon network using any public EVM RPC node.
 
 ---
